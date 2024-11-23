@@ -1,0 +1,27 @@
+<h3>Ajouter un Restaurant</h3>
+<div class="group-control">
+  <label>Titre</label> :
+  <input type="text" [(ngModel)]="rest.titre" class="form-control" required>
+</div>
+
+<div class="group-control">
+  <label>Description</label> :
+  <input type="text" [(ngModel)]="rest.description" class="form-control" required>
+</div>
+
+<div class="group-control">
+  <label>Adresse</label> :
+  <input type="text" [(ngModel)]="rest.adresse" class="form-control" required>
+</div>
+
+<div class="group-control">
+  <label>Spécialité</label> :
+  <input type="text" [(ngModel)]="rest.specialite" class="form-control" required>
+</div>
+
+<div class="group-control">
+  <label>Image</label> :
+  <input #imageInput type="file" accept="image/*" class="form-control" required>
+</div>
+
+<p><button (click)="add(imageInput)" class="btn btn-primary">Ajouter</button></p>
